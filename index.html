@@ -1,0 +1,249 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/82b1f82b60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Aarti</span> Chavan<br>From New Mumbai</h1>
+        </div>
+    </div>
+</div>
+ <!-- -------------about--------------  -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="background.a.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Aarti Chavan here,
+                    a dedicated student eager to transition my education into practical work experience.
+                    I possess strong technical skills in software and applications,
+                    adept at handling complex tasks, and proficient in time management.
+                    I am confident that I am well-suited for this internship role
+                    as I am equipped with all the necessary skills.
+                    Being an outgoing individual who enjoys interacting with others,
+                    I aspire to pursue a career in the field of computer science,
+                    making this opportunity to collaborate with your team invaluable for my growth.
+                    I am excited about the prospect of contributing to your organization
+                    and eager to embark on this professional journey.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'Education')">Education</p>
+                        <p class="tab-links" onclick="opentab(event, 'Work Experience')">Work Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'Hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab(event, 'Skills')">Skills</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li>2020<br><span>SSC at DVS School</span></li>
+                            <li>2022<br><span>HSC at DY PATIL Jr College</span></li>
+                            <li>ICL's Motilal JhunJhunWala College<br><span>Completing BSC.Computer science Degree
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Work Experience">
+                        <ul>
+                            <li><span>Intern at Unified Mentor For Web Development Training</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Hobbies">
+                        <ul>
+                            <li><span>Convincing communication</span></li>
+                            <li><span>Error / problem Solving</span></li>
+                            <li><span>Studying new skills</span></li>
+                            <li><span>Programming</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>Html</span></li>
+                            <li><span>Css</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>Wordpress</span></li>
+                            <li><span>Java programming</span></li>
+                            <li><span>Python Programming</span></li>
+                            <li><span>Computer Networking</span></li>
+                            <li><span>Effective Communicaton</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <!-- Add your content here -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------Projects------------------->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="Projects-list"> <!-- Corrected class name -->
+            <div> 
+                <i class="fa-solid fa-code"></i>
+                <h2>Personal Portfolio Website</h2>
+                <p>As my debut project, I've crafted this personal portfolio website
+                that not only showcases my web design prowess 
+                but also highlights the projects I've passionately worked on. 
+                It serves as a testament to my journey in computer science 
+                and my commitment to continuous learning and improvement.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div> 
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Gas Agency System</h2>
+                <p>This project is my second project, 
+                and it aims to streamline the gas booking process 
+                by allowing clients to book gas connections through the internet.
+                Users no longer need to call the distributor or visit the gas agency physically.
+                The system provides online booking, real-time status updates, 
+                and secure information storage. 
+                It's a significant improvement over the existing manual process.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------Contact------------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>caartichavan6@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>8425985271</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100068012183036&mibextid=JRoKGi"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/whatthehell.aarti?igsh=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/aartichavan2"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Aarti Chavan.Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                   <input type="text" name="Name" placeholder="Your Name" required> 
+                   <input type="text" name="Email" placeholder="Your Email" required> 
+                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright"> <!-- Corrected class name to lowercase -->
+        <p>copyright Aarti. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+        
+    }
+    
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    // Smooth scrolling for anchor links
+document.addEventListener('DOMContentLoaded', function() {
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+    
+    for (const smoothScrollLink of smoothScrollLinks) {
+        smoothScrollLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+});
+
+</script>
+<script>
+    const scriptURL ='https://script.google.com/macros/s/AKfycbwPdU3hL2ihIF9UTTYPkgpqbF3mkhaXqFT8r44b0nWvMVY3xWFNql46_Wo6N_FXW5p2uA/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { 
+          method: 'POST', 
+          body: new FormData(form)
+      })
+      .then(response => {
+          if (response.ok) {
+              msg.innerHTML = "Message sent successfully";
+              setTimeout(function(){
+                  msg.innerHTML = "";
+              }, 5000);
+              form.reset();
+          } else {
+              throw new Error('Network response was not ok.');
+          }
+      })
+      .catch(error => {
+          console.error('Error!', error.message);
+      });
+    });
+</script>
+
+</body>
+</html>
